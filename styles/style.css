@@ -268,6 +268,10 @@
     padding-block: 10px;
   }
 
+  .header__text {
+    max-inline-size: 355px;
+  }
+
   .rec-indicator {
     inset-inline-end: 28px;
     inset-block-start: 10px;
