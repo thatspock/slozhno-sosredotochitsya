@@ -2,8 +2,11 @@
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
   --title-color: #DB00FF;
-  --paragraph-color: #F1B2CE;
-  --dark-color: #000028;
+  --accent-text-color: #000028;
+  --shadow-color: #FF0070;
+  --background-color: #000028;
+  --heading-text-color: #FF0070;
+  --background-image: url(../images/cover-image.png);
   --main-font: 'IBM Plex Mono', sans-serif;
   --base-font-size: 18px;
 }

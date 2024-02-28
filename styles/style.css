@@ -2,8 +2,8 @@
   padding-inline: 20px;
   font-family: var(--main-font), sans-serif;
   font-size: var(--base-font-size);
-  background-color: var(--dark-color);
-  background-image: url(../images/cover-image.png);
+  background-color: var(--background-color);
+  background-image: var(--background-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -49,7 +49,7 @@
   position: absolute;
   border-radius: 50%;
   background-color: var(--accent-color);
-  filter: drop-shadow(0px 0px 4px #FF0070);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
   inline-size: 9px;
   block-size: 9px;
   inset-block-start: 8px;
@@ -59,8 +59,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-bottom: 1px solid var(--accent-color); 
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--heading-text-color); 
+  border-left: 1px solid var(--heading-text-color);
   inline-size: 25px;
   block-size: 25px;
   inset-block-end: 20px;
@@ -69,8 +69,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute; 
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--heading-text-color);
+  border-block-start: 1px solid var(--heading-text-color);
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: 20px;
@@ -78,9 +78,8 @@
 }
 
 .header__theme-menu-item {
-  color: var(--accent-color);
+  color: var(--heading-text-color);
   font-weight: 400;
-
 }
 
 .header__theme-menu-button {
@@ -107,11 +106,11 @@
 }
 
 .heading__shadow {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .heading__footer-shadow {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
 .header__title {
@@ -121,7 +120,7 @@
 .header__text {
   justify-self: end;
   align-self: center;
-  color: var(--dark-color);
+  color: var(--accent-text-color);
   font-weight: 700;
   line-height: 1.3;
   max-inline-size: 491px;
@@ -132,14 +131,14 @@
 }
 
 .concentration__title, .concentration__subsection-title, .concentration__advice-title {
-  color: var(--dark-color);
+  color: var(--accent-text-color);
   font-weight: 700;
   font-size: var(--base-font-size);
   line-height: 1.3;
 }
 
 .concentration__title {
-  color: var(--accent-color);
+  color: var(--heading-text-color);
 }
 
 .concentration__advice-title {
@@ -147,7 +146,7 @@
 }
 
 .concentration__paragraph {
-  color: var(--paragraph-color);
+  color: var(--text-color);
   line-height: 1.3;
 }
 
