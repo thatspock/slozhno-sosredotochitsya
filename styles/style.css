@@ -102,7 +102,7 @@
 .heading {
   color: var(--title-color);
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 0.825;
 }
 
@@ -121,10 +121,10 @@
 .header__text {
   justify-self: end;
   align-self: center;
-  width: 491px;
   color: var(--dark-color);
   font-weight: 700;
   line-height: 1.3;
+  max-inline-size: 491px;
 }
 
 .title-decor {
@@ -227,4 +227,102 @@
   position: relative;
   align-content: center;
   text-align: center;
+}
+
+@media (375px <= width < 1024px) {
+  .header__theme-menu-list {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, max-content);
+    justify-content: end;
+    row-gap: 13px;
+  }
+
+  .header__theme-menu {
+    align-self: center;
+  }
+}
+
+@media (768px <= width < 1024px) {
+  .header__text {
+    max-inline-size: 364px;
+  }
+
+  .concentration-difficulty, .concentration-tips {
+    grid-template-columns: minmax(auto, 236px) repeat(2, 1fr);
+  }
+
+  .concentration-reducers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .concentration-reducers > .concentration-content {
+    grid-column: span 3;
+    grid-row: span 1; 
+  }
+}
+
+@media (375px <= width < 768px) {
+  .page {
+    padding-inline: 10px;
+  }
+
+  .header, .footer {
+    padding-block: 10px;
+  }
+
+  .rec-indicator {
+    inset-inline-end: 28px;
+    inset-block-start: 10px;
+  }
+
+  .decorated-zone::after {
+    inset-block-start: 10px;
+  }
+
+  .header__title {
+    margin-inline-start: 0;
+  }
+
+  .header__theme-menu-list {
+    row-gap: 11px;
+  }
+
+  .concentration-difficulty, .concentration-reducers, .concentration-tips {
+    grid-template-columns: 1fr;
+  }
+
+  .concentration-difficulty {
+    padding-block: 40px 50px;
+  }
+
+  .concentration-reducers, .concentration-tips {
+    padding-block-end: 50px;
+  }
+
+  .concentration-difficulty > .concentration-content, 
+  .concentration-reducers > .concentration-content,
+  .concentration-tips > .concentration-content {
+    grid-column: 1;
+    grid-row: span 1;
+  }
+
+  .concentration-pics {
+    row-gap: 10px;
+  }
+
+  .concentration-image-gallery {
+    row-gap: 10px;
+  }
+
+  .concentration-image-gallery__sunset, 
+  .concentration-image-gallery__ice-cream,
+  .concentration-image-gallery__tape,
+  .concentration-image-gallery__books,
+  .concentration-image-gallery__street {
+    grid-column: span 1;
+    grid-row: auto;
+  }
+
+  .concentration-pics {
+    padding-block-end: 40px;
+  }
 }
