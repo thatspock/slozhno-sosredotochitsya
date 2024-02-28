@@ -1,4 +1,4 @@
-:root.theme-dark {
+.page.theme-dark {
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
   --title-color: #DB00FF;
@@ -9,13 +9,8 @@
   --background-image: url(../images/cover-image.png);
 }
 
-.page.theme_dark {
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
-  --accent-text-color: #000028;
-  --shadow-color: #FF0070;
-  --background-color: #000028;
-  --heading-text-color: #FF0070;
-  --background-image: url(../images/cover-image.png);
+@media (375px <= width < 1024px) {
+  .page {
+    --background-image: url(../images/cover-image-dark.png);
+  }
 }
