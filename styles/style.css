@@ -111,7 +111,7 @@
 .heading {
   color: var(--title-color);
   font-weight: 700;
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 0.825;
 }
 
@@ -275,11 +275,7 @@
   .header__text {
     max-inline-size: 364px;
   }
-
-  .heading {
-    font-size: clamp(7.5rem, 7.5rem + 0vw, 7.5rem);
-  }
-
+  
   .concentration-difficulty, .concentration-tips {
     grid-template-columns: minmax(auto, 236px) repeat(2, 1fr);
   }
@@ -304,6 +300,10 @@
 
   .header__text {
     max-inline-size: 355px;
+  }
+
+  .heading {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .rec-indicator {
