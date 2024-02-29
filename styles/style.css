@@ -35,7 +35,7 @@
   inset-block-start: 20px;
 }
 
-.rec-indicator::before  {
+.rec-indicator::before {
   content: "REC";
   color: var(--accent-color);
   font-family: var(--main-font), sans-serif;
@@ -59,7 +59,7 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-bottom: 1px solid var(--heading-text-color); 
+  border-bottom: 1px solid var(--heading-text-color);
   border-left: 1px solid var(--heading-text-color);
   inline-size: 25px;
   block-size: 25px;
@@ -68,13 +68,13 @@
 
 .decorated-zone::after {
   content: "";
-  position: absolute; 
+  position: absolute;
   border-inline-end: 1px solid var(--heading-text-color);
   border-block-start: 1px solid var(--heading-text-color);
   inline-size: 25px;
   block-size: 25px;
   inset-block-start: 20px;
-  inset-inline-end: 0; 
+  inset-inline-end: 0;
 }
 
 .header__theme-menu-item {
@@ -86,16 +86,13 @@
   border: none;
   padding: 0 13px 2px;
   outline: none;
+  text-transform: lowercase;
   background: none;
   cursor: pointer;
 }
 
 .header__theme-menu-button_active {
   outline: 1px solid currentColor;
-}
-
-.header__theme-menu-button {
-  text-transform: lowercase;
 }
 
 .heading {
@@ -150,7 +147,7 @@
   line-height: 1.3;
 }
 
-.concentration-difficulty, .concentration-tips{
+.concentration-difficulty, .concentration-tips {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -163,7 +160,7 @@
 
 .concentration-difficulty > .concentration-content, .concentration-tips > .concentration-content {
   display: grid;
-  grid-column: 2 / 4; 
+  grid-column: 2 / 4;
   row-gap: 10px;
 }
 
@@ -202,7 +199,7 @@
 }
 
 .concentration-image-gallery__sunset {
-  grid-column: span 2; 
+  grid-column: span 2;
 }
 
 .concentration-image-gallery__ice-cream {
@@ -262,7 +259,7 @@
   }
   .concentration-reducers > .concentration-content {
     grid-column: span 3;
-    grid-row: span 1; 
+    grid-row: span 1;
   }
 }
 
