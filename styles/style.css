@@ -249,6 +249,10 @@
     max-inline-size: 364px;
   }
 
+  .heading {
+    font-size: clamp(7.5rem, 7.5rem + 0vw, 7.5rem);
+  }
+
   .concentration-difficulty, .concentration-tips {
     grid-template-columns: minmax(auto, 236px) repeat(2, 1fr);
   }
@@ -313,10 +317,12 @@
 
   .concentration-pics {
     row-gap: 10px;
+    padding-block-end: 40px;
   }
 
   .concentration-image-gallery {
     row-gap: 10px;
+    padding-block-start: 10px;
   }
 
   .concentration-image-gallery__sunset, 
@@ -326,9 +332,5 @@
   .concentration-image-gallery__street {
     grid-column: span 1;
     grid-row: auto;
-  }
-
-  .concentration-pics {
-    padding-block-end: 40px;
   }
 }
