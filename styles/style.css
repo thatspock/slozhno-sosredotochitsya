@@ -82,6 +82,10 @@
   font-weight: 400;
 }
 
+.header__theme-menu-item:hover {
+  outline: 1px solid currentColor;
+}
+
 .header__theme-menu-button {
   border: none;
   padding: 0 13px 2px;
@@ -91,8 +95,17 @@
   cursor: pointer;
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid currentColor;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid currentColor;
+}
+
 .header__theme-menu-button_active {
   outline: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .heading {
@@ -103,11 +116,11 @@
 }
 
 .heading__shadow {
-  text-shadow: 4px 4px 0 var(--shadow-color);
+  text-shadow: 4px 4px 0 var(--heading-shadow-color);
 }
 
 .heading__footer-shadow {
-  text-shadow: 2px 2px 0 var(--shadow-color);
+  text-shadow: 2px 2px 0 var(--heading-shadow-color);
 }
 
 .header__title {
@@ -145,6 +158,23 @@
 .concentration__paragraph {
   color: var(--text-color);
   line-height: 1.3;
+}
+
+.concentration__paragraph a {
+  text-decoration: none;
+  outline: none;
+}
+
+.concentration__paragraph a:hover {
+  border-block-end: 1px solid currentColor;
+}
+
+.concentration__paragraph a:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+.text__shadow {
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .concentration-difficulty, .concentration-tips {
@@ -291,6 +321,10 @@
 
   .header__theme-menu-list {
     row-gap: 11px;
+  }
+
+  .text__shadow {
+    text-shadow: 2px 1px 0 var(--accent-color);
   }
 
   .concentration-difficulty, .concentration-reducers, .concentration-tips {
