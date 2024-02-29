@@ -59,8 +59,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-bottom: 1px solid var(--heading-text-color);
-  border-left: 1px solid var(--heading-text-color);
+  border-block-end: 1px solid var(--heading-text-color);
+  border-inline-start: 1px solid var(--heading-text-color);
   inline-size: 25px;
   block-size: 25px;
   inset-block-end: 20px;
@@ -275,7 +275,7 @@
   .header__text {
     max-inline-size: 364px;
   }
-  
+
   .concentration-difficulty, .concentration-tips {
     grid-template-columns: minmax(auto, 236px) repeat(2, 1fr);
   }
