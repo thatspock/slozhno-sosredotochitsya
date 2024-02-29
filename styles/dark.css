@@ -6,6 +6,7 @@
   --heading-shadow-color: #FF0070;
   --background-color: #000028;
   --heading-text-color: #FF0070;
+  --outline-color: 1px solid rgba(255, 0, 112, 0.40);
   --background-image: url(../images/cover-image.png);
 }
 

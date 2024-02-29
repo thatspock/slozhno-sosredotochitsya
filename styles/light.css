@@ -5,6 +5,7 @@
   --accent-text-color: #353430;
   --background-color: #FFF1F7;
   --heading-text-color: #353430;
+  --outline-color: 1px solid rgba(50, 49, 45, 0.40);
   --background-image: url(../images/cover-image-light.png);
 }
 
@@ -16,6 +17,7 @@
     --accent-text-color: #353430;
     --background-color: #FFF1F7;
     --heading-text-color: #353430;
+    --outline-color: 1px solid rgba(50, 49, 45, 0.40);
     --background-image: url(../images/cover-image-light.png);
     }
 }
