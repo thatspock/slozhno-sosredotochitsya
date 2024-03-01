@@ -7,11 +7,6 @@
   --background-color: #000028;
   --heading-text-color: #FF0070;
   --outline-color: 1px solid rgba(255, 0, 112, 0.40);
-  --background-image: url(../images/cover-image.png);
-}
-
-@media (375px <= width < 1024px) {
-  .page {
-    --background-image: url(../images/cover-image-dark.png);
-  }
+  --rec-indicator-color: #FF0070;
+  --background-image: url(../images/cover-image-dark.png);
 }

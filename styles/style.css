@@ -37,7 +37,7 @@
 
 .rec-indicator::before {
   content: "rec";
-  color: var(--accent-color);
+  color: var(--rec-indicator-color);
   font-family: var(--main-font), monospace;
   font-weight: 400;
   font-size: var(--base-font-size);
@@ -49,8 +49,8 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--accent-color);
-  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--rec-indicator-color);
+  background-color: var(--rec-indicator-color);
   inline-size: 9px;
   block-size: 9px;
   inset-block-start: 8px;
@@ -232,26 +232,26 @@
   block-size: 100%;
 }
 
-.concentration-image-gallery__sunset {
+.concentration-image-gallery__item:nth-child(1) {
   grid-column: span 2;
 }
 
-.concentration-image-gallery__ice-cream {
+.concentration-image-gallery__item:nth-child(2) {
   grid-column: 3;
   grid-row: span 2;
 }
 
-.concentration-image-gallery__tape {
+.concentration-image-gallery__item:nth-child(3) {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
 }
 
-.concentration-image-gallery__books {
+.concentration-image-gallery__item:nth-child(4) {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
 
-.concentration-image-gallery__street {
+.concentration-image-gallery__item:nth-child(5) {
   grid-column: 2 / 4;
   grid-row: 3;
 }
