@@ -201,7 +201,7 @@
 
 .concentration-reducers > .concentration__title {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, 315px);
   grid-column: 1 / 4;
 }
 
@@ -291,6 +291,11 @@
   .concentration-reducers {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .concentration-reducers > .concentration__title {
+    grid-template-columns: repeat(auto-fill, 236px);
+  }
+
   .concentration-reducers > .concentration-content {
     grid-column: span 3;
     grid-row: span 1;
@@ -299,8 +304,8 @@
 
 @media (375px <= width < 768px) {
   .header, .footer {
-    min-block-size: 668px;
     padding-block: 10px;
+    min-block-size: 668px;
   }
 
   .page {
@@ -322,6 +327,10 @@
 
   .decorated-zone::after {
     inset-block-start: 10px;
+  }
+
+  .decorated-zone::before {
+    inset-block-end: 10px;
   }
 
   .header__title {
@@ -348,6 +357,11 @@
     padding-block-end: 50px;
   }
 
+  .concentration-reducers > .concentration__title {
+    grid-template-columns: auto;
+    grid-column: 1;
+  }
+
   .concentration-difficulty > .concentration-content, 
   .concentration-reducers > .concentration-content,
   .concentration-tips > .concentration-content {
@@ -365,11 +379,11 @@
     padding-block-start: 10px;
   }
 
-  .concentration-image-gallery__sunset, 
-  .concentration-image-gallery__ice-cream,
-  .concentration-image-gallery__tape,
-  .concentration-image-gallery__books,
-  .concentration-image-gallery__street {
+  .concentration-image-gallery__item:nth-child(1), 
+  .concentration-image-gallery__item:nth-child(2),
+  .concentration-image-gallery__item:nth-child(3),
+  .concentration-image-gallery__item:nth-child(4),
+  .concentration-image-gallery__item:nth-child(5) {
     grid-column: span 1;
     grid-row: auto;
   }
