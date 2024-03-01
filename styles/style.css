@@ -300,14 +300,11 @@
 @media (375px <= width < 768px) {
   .header, .footer {
     min-block-size: 668px;
+    padding-block: 10px;
   }
 
   .page {
     padding-inline: 10px;
-  }
-
-  .header, .footer {
-    padding-block: 10px;
   }
 
   .header__text {
