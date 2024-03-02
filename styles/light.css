@@ -8,4 +8,20 @@
   --outline-color: 1px solid rgba(50, 49, 45, 0.40);
   --rec-indicator-color: transparent;
   --background-image: url(../images/cover-image-light.png);
+  --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #353430;
+    --accent-color: #FF8DCB;
+    --title-color: #FFC2E6;
+    --accent-text-color: #353430;
+    --background-color: #FFF1F7;
+    --heading-text-color: #353430;
+    --outline-color: 1px solid rgba(50, 49, 45, 0.40);
+    --rec-indicator-color: transparent;
+    --background-image: url(../images/cover-image-light.png);
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
 }

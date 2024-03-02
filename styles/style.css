@@ -14,6 +14,7 @@
   display: grid;
   padding-block: 20px;
   min-block-size: 768px;
+  block-size: 100vb;
 }
 
 .header {
@@ -109,7 +110,7 @@
 .heading {
   color: var(--title-color);
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: var(--logo-size);
   line-height: 0.825;
 }
 
@@ -138,7 +139,7 @@
   background-color: var(--accent-color);
 }
 
-.concentration__title, .concentration__subsection-title, .concentration__advice-title {
+.concentration__text-title {
   color: var(--accent-text-color);
   font-weight: 700;
   font-size: var(--base-font-size);
@@ -175,7 +176,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.concentration-difficulty, .concentration-tips {
+.concentration-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -186,7 +187,7 @@
   padding-block-start: 60px;
 }
 
-.concentration-difficulty > .concentration-content, .concentration-tips > .concentration-content {
+.concentration-section > .concentration-content {
   display: grid;
   grid-column: 2 / 4;
   row-gap: 10px;
@@ -211,7 +212,7 @@
   row-gap: 10px;
 }
 
-.concentration-tips > .concentration__title {
+.concentration-section > .concentration__title {
   grid-row: span 2;
 }
 
@@ -284,7 +285,7 @@
     max-inline-size: 364px;
   }
 
-  .concentration-difficulty, .concentration-tips {
+  .concentration-section {
     grid-template-columns: minmax(auto, 236px) repeat(2, 1fr);
   }
 
@@ -317,7 +318,7 @@
   }
 
   .heading {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: var(--logo-size);
   }
 
   .rec-indicator {
@@ -345,7 +346,7 @@
     text-shadow: 2px 1px 0 var(--accent-color);
   }
 
-  .concentration-difficulty, .concentration-reducers, .concentration-tips {
+  .concentration-section, .concentration-reducers {
     grid-template-columns: 1fr;
   }
 
@@ -362,9 +363,8 @@
     grid-column: 1;
   }
 
-  .concentration-difficulty > .concentration-content, 
-  .concentration-reducers > .concentration-content,
-  .concentration-tips > .concentration-content {
+  .concentration-section > .concentration-content, 
+  .concentration-reducers > .concentration-content {
     grid-column: 1;
     grid-row: span 1;
   }

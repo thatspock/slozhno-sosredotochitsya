@@ -1,4 +1,4 @@
-.page.theme-dark {
+.page.theme_dark {
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
   --title-color: #DB00FF;
@@ -9,19 +9,5 @@
   --outline-color: 1px solid rgba(255, 0, 112, 0.40);
   --rec-indicator-color: #FF0070;
   --background-image: url(../images/cover-image-dark.png);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #F1B2CE;
-    --accent-color: #FF0070;
-    --title-color: #DB00FF;
-    --accent-text-color: #000028;
-    --heading-shadow-color: #FF0070;
-    --background-color: #000028;
-    --heading-text-color: #FF0070;
-    --outline-color: 1px solid rgba(255, 0, 112, 0.40);
-    --rec-indicator-color: #FF0070;
-    --background-image: url(../images/cover-image-dark.png);
-    }
+  --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
